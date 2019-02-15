@@ -2,91 +2,88 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="game-container">
-            <header>
-                <h1>Memory Game</h1>
-            </header>
-            <div class="board-container">
-                <ul class="deck">
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup1.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup1.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup2.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup2.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup3.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup3.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup4.webp" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup4.webp" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup5.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup5.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup6.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup6.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup7.jpeg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup7.jpeg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup8.jpg" alt=""/>
-                    </li>
-                    <li class="card">
-                        <img class="card__front" src="./img/front.jpeg" alt=""/>
-                        <img class="card__back" src="./img/pup8.jpg" alt=""/>
-                    </li>
-                </ul>
-            </div>
-            
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="memory-game">
+        <div class="memory-card" data-framework="pup1">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup1.jpg" alt="" />
         </div>
-        
-        <script src="index.js" async defer></script>
-    </body>
+        <div class="memory-card" data-framework="pup1">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup1.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup2">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup2.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup2">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup2.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup3">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup3.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup3">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup3.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup4">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup4.webp" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup4">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup4.webp" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup5">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup5.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup5">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup5.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup6">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup6.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup6">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup6.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup7">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup7.jpeg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup7">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup7.jpeg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup8">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup8.jpg" alt="" />
+        </div>
+        <div class="memory-card" data-framework="pup8">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup8.jpg" alt="" />
+        </div>
+    </div>
+
+    <script src="index.js" async defer></script>
+</body>
+
 </html>
