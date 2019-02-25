@@ -4,7 +4,6 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 let counter = document.querySelector('.move-counter');
-console.log(counter)
 let moves = 0;
 let resetButton = document.querySelector('.reset-button');
 let timer = document.querySelector('.timer');
@@ -31,6 +30,7 @@ function startTimer() {
             minute = 0;
         }
     }, 1000);
+    deck.removeEventListener('click', startTimer);
 }
 
 function flipCard() {
@@ -106,6 +106,7 @@ function resetBoard() {
     });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard))
 
 deck.addEventListener('click', startTimer);
+
+cards.forEach(card => card.addEventListener('click', flipCard))
