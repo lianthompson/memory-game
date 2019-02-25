@@ -12,6 +12,10 @@ let deck = document.querySelector('.deck');
 let minute = 0;
 let seconds = 0;
 
+function newGame() {
+    location.reload();
+}
+
 function countMoves() {
     moves ++;
     counter.innerHTML = "Moves: " + moves;
@@ -110,3 +114,5 @@ function resetBoard() {
 deck.addEventListener('click', startTimer);
 
 cards.forEach(card => card.addEventListener('click', flipCard))
+
+resetButton.addEventListener('click', newGame)

@@ -19,10 +19,6 @@ body {
     width: 15px;
 }
 
-/* .feature-container {
-    text-align: left;
-} */
-
 .reset-button {
     cursor: pointer;
 }
@@ -81,4 +77,16 @@ img {
 
 .card__back {
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 400px) {
+    .deck {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .deck {
+        width: 50%;
+    }
 }
