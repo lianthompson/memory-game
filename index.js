@@ -2,6 +2,7 @@ const cards = document.querySelectorAll('.card-container');
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
+let matchingCards = 0;
 let lockBoard = false;
 let counter = document.querySelector('.move-counter');
 let moves = 0;
@@ -11,6 +12,10 @@ let interval;
 let deck = document.querySelector('.deck');
 let minute = 0;
 let seconds = 0;
+let stars = document.querySelectorAll('.star');
+console.log(stars)
+let starsArray = Array.from(stars);
+console.log(starsArray)
 
 function newGame() {
     location.reload();
@@ -19,6 +24,19 @@ function newGame() {
 function countMoves() {
     moves ++;
     counter.innerHTML = "Moves: " + moves;
+
+    if(moves === 9) {
+        starsArray[3].style.display = "none"
+        starsArray.pop();
+    } else if (moves === 14) {
+        starsArray[2].style.display = "none"
+        starsArray.pop();
+    } else if (moves === 21) {
+        starsArray[1].style.display = "none"
+        starsArray.pop();
+    } else {
+        starsArray[0].style.display = "inline"
+    }
 }
 
 function startTimer() {
@@ -57,8 +75,8 @@ function flipCard() {
 
         
         // do cards match?
-        console.log(firstCard.dataset.framework);
-        console.log(secondCard.dataset.framework);
+        // console.log(firstCard.dataset.framework);
+        // console.log(secondCard.dataset.framework);
 
         checkForMatch();
 
@@ -67,6 +85,11 @@ function flipCard() {
 
 function checkForMatch() {
     if (firstCard.dataset.framework === secondCard.dataset.framework) {
+        matchingCards++;
+        console.log(matchingCards)
+        if(matchingCards == 8) {
+            alert("Congrats!! You made " + moves + " moves in " +  minute + " minutes and " + seconds + " seconds. You scored " + starsArray.length + " stars!" );
+        }
         // it's a match!
         disableCards();
         countMoves();
@@ -110,6 +133,12 @@ function resetBoard() {
     });
 })();
 
+
+function finished() {
+    if(matchingCards === 1) {
+        console.log("congrats!")
+    }
+}
 
 deck.addEventListener('click', startTimer);
 
