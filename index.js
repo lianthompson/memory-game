@@ -3,6 +3,14 @@ const cards = document.querySelectorAll('.card-container');
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let counter = document.querySelector('.move-counter');
+let moves = 0;
+let resetButton = document.querySelector('.reset-button');
+
+function countMoves() {
+    moves ++;
+    counter.innerHTML = "Moves: " + moves;
+}
 
 function flipCard() {
     if (lockBoard) return;
@@ -36,10 +44,11 @@ function checkForMatch() {
     if (firstCard.dataset.framework === secondCard.dataset.framework) {
         // it's a match!
         disableCards();
+        countMoves();
     } else {
         // not a match
         unflipCards();
-
+        countMoves();
         // Ternary Operation
         // let isMatch = firstCard.dataset.framework === secondCard.dataset.framework
 
@@ -76,4 +85,6 @@ function resetBoard() {
     });
 })();
 
+
 cards.forEach(card => card.addEventListener('click', flipCard))
+
