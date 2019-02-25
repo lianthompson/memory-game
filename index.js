@@ -88,6 +88,7 @@ function checkForMatch() {
         matchingCards++;
         console.log(matchingCards)
         if(matchingCards == 8) {
+            stopTimer();
             alert("Congrats!! You made " + moves + " moves in " +  minute + " minutes and " + seconds + " seconds. You scored " + starsArray.length + " stars!" );
         }
         // it's a match!
@@ -133,11 +134,8 @@ function resetBoard() {
     });
 })();
 
-
-function finished() {
-    if(matchingCards === 1) {
-        console.log("congrats!")
-    }
+function stopTimer() {
+    clearTimeout(interval)
 }
 
 deck.addEventListener('click', startTimer);
