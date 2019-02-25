@@ -16,73 +16,98 @@
 </head>
 
 <body>
-    <div class="memory-game">
-        <div class="memory-card" data-framework="pup1">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup1.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup1">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup1.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup2">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup2.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup2">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup2.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup3">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup3.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup3">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup3.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup4">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup4.webp" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup4">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup4.webp" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup5">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup5.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup5">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup5.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup6">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup6.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup6">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup6.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup7">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup7.jpeg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup7">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup7.jpeg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup8">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup8.jpg" alt="" />
-        </div>
-        <div class="memory-card" data-framework="pup8">
-            <img class="card__front" src="./img/front.jpeg" alt="" />
-            <img class="card__back" src="./img/pup8.jpg" alt="" />
+    <div class="game-container">
+    <div class="header-container">
+        <h1>Memory Game</h1>
+        <div class="feature-container">
+            <h4 class="move-counter">Moves: </h4>
+            <h4 class="timer">Timer: 0</h4>
+            <h4 class="rank">
+                <ul>
+                    <li class="star">
+                        <img class="star-img" src="./img/star-image.png" alt="" />
+                    </li>
+                    <li class="star">
+                        <img class="star-img" src="./img/star-image.png" alt="" />
+                    </li>
+                    <li class="star">
+                        <img class="star-img" src="./img/star-image.png" alt="" />
+                    </li>
+                    <li class="star">
+                        <img class="star-img" src="./img/star-image.png" alt="" />
+                    </li>
+                </ul>
+            </h4>
+            <button class="reset-button">Reset</button>
         </div>
     </div>
-
+    <ul class="deck">
+        <li class="card-container" data-framework="pup1">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup1.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup1">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup1.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup2">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup2.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup2">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup2.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup3">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup3.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup3">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup3.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup4">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup4.webp" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup4">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup4.webp" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup5">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup5.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup5">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup5.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup6">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup6.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup6">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup6.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup7">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup7.jpeg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup7">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup7.jpeg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup8">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup8.jpg" alt="" />
+        </li>
+        <li class="card-container" data-framework="pup8">
+            <img class="card__front" src="./img/front.jpeg" alt="" />
+            <img class="card__back" src="./img/pup8.jpg" alt="" />
+        </li>
+    </ul>
+    </div>
     <script src="index.js" async defer></script>
 </body>
 

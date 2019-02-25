@@ -10,27 +10,48 @@ body {
     display: flex;
 }
 
-header {
+.star {
+    list-style-type: none;
+    display: inline;
+}
+
+.star-img {
+    width: 15px;
+}
+
+/* .feature-container {
+    text-align: left;
+} */
+
+.reset-button {
+    cursor: pointer;
+}
+
+.game-container {
+    margin: 0 auto;
     width: 100%;
-    text-align: center;
-    order: 1;
-    border: 1px solid purple;
+}
+
+.header-container {
+    width: 100%;
+    text-align: center;  
+    padding: 20px;  
 }
 
 img {
     width: 200px;
 }
 
-.memory-game {
-    width: 640px;
-    height: 640px;
+.deck {
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     perspective: 1000px;
 }
 
-.memory-card {
+.card-container {
     width: calc(25% - 10px);
     margin: 5px;
     height: calc(25% -10px);
@@ -38,6 +59,7 @@ img {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+    list-style-type: none;
 }
 
 .card__back, .card__front {
@@ -48,16 +70,15 @@ img {
     backface-visibility: hidden;
 } 
 
-.memory-card:active {
+.card-container:active {
     transform: scale(.97);
     transition: transform .2s;
 }
 
-.memory-card.flip {
+.card-container.flip {
     transform: rotateY(180deg);
 }
 
 .card__back {
     transform: rotateY(180deg);
-    
 }
